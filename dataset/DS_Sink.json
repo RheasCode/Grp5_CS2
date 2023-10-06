@@ -1,0 +1,25 @@
+{
+	"name": "DS_Sink",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_Grp5_CS2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "ADF_RawData",
+				"folderPath": "raw",
+				"container": "parent"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
